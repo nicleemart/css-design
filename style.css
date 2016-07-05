@@ -2,18 +2,15 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 11px;
 }
 .main {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
 	justify-content: flex-start;
 	align-items: stretch;
 }
 .left {
 	width: 18%;
-	order: 1;
 	min-height: 100vh;
 	background-color: #11171C;
 	color: white;
@@ -30,6 +27,7 @@ body {
 	border-bottom-style: solid;
 	border-color: white;
 	border-width: 3px;
+	font-style: italic;
 }
 .sidebarHeader {
 	display: flex;
@@ -37,34 +35,57 @@ body {
 	font-weight: bold;
 	padding: 10px;
 }
+.sidebarHeader--lighter{
+	color: #6F7A81;
+}
 .sidebarLinks {
 	list-style: none;
 	line-height: 30px;
 }
 .center {
-	order: 2;
-	width: 60%;
+	width: 64%;
 }
 .siteTitle {
 	padding-top: 10px;
 	font-size: 24px;
 }
-.sortContent {
+.organizeContent {
 }
 .content {
 	display: flex;
 	display: inline-block;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
 }
 .right {
 	width: 18%;
-	order: 3;
 	min-height: 100vh;
 	background-color: #ECEDEF;
-	float: right;
 }
-.right__header {
+.userInfo {
 	width: 100%;
 	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: #74C0C8;
 	color: white;
+}
+.friendInfo {
+	color: #616D75;
+}
+.friendInfo__photo {
+	float: left;
+	width: 25px;
+
+}
+.friendInfo__name {
+	font-weight: bold;
+}
+.friendInfo__movie{
+	color: #B2B9C3;
+}
+.friendInfo__status{
+	float: right;
 }
