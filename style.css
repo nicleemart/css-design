@@ -6,8 +6,6 @@ body {
 }
 .main {
 	display: flex;
-	justify-content: flex-start;
-	align-items: stretch;
 }
 .left {
 	width: 18%;
@@ -49,23 +47,38 @@ body {
 }
 .center {
 	width: 64%;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 .header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	padding-top: 10px;
 }
 .siteTitle {
 	padding-top: 10px;
 	font-size: 24px;
 }
 .sortContent {
+	display: flex;
+	flex-direction: row;
+}
+.sortContent__date {
+	color: #CFD5DF;
+	font-weight: bold;
+}
+.sortContent__divider {
+	color: #CFD5DF;
+}
+.sortContent__popular {
+	color: #8BC9D0;
+	font-weight: bold;
 }
 .content {
 	display: inline-block;
-	flex-direction: column;
-	justify-content: space-between;
+	padding: 5px;
 }
 .content__title {
 	color: #5D6A72;
@@ -90,12 +103,13 @@ body {
 	height: 10%;
 	background-color: #74C0C8;
 }
+.userInfo {
+	padding: 5px;
+	padding-left: 15px;
+}
 .userInfo__photo {
 	float: left;
 	padding-right: 5px;
-}
-.userInfo {
-	padding: 5px;
 }
 .userInfo__name {
 	color: #616D75;
@@ -106,11 +120,16 @@ body {
 }
 .userInfo__status{
 	float: right;
+	padding-right: 15px;
 }
 .userInfo--currentUser{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+}
+.userInfo__photo--currentUser{
+	width: 15px;
+	height: 15px;
 }
 .userInfo__name--currentUser{
 	color: white;
