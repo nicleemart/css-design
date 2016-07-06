@@ -12,21 +12,37 @@ body {
 	min-height: 100vh;
 	background-color: #11171C;
 }
-.focusArea {
+.searchBox {
 	width: 100%;
 	height: 10%;
 	background-color: #CC4D4D;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 }
-.focusArea--chat {
-	background-color: #C4CCD8;
-}
-.focusArea__text {
+.search{
+	display: flex;
+	justify-content: space-between;
 	border-bottom: solid white 3px;
-	color: white;
+	width: 150px;
+}
+.search__input {
+	background: transparent;
+	border: none;
 	font-style: italic;
+	color: white;
+}
+::-webkit-input-placeholder {
+	color: white;
+}
+.search__icon {
+	margin-left: 10px;
+}
+.search--chat {
+	background-color: #C4CCD8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .sidebarHeader {
 	display: flex;
