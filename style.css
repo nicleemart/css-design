@@ -42,8 +42,14 @@ body {
 	list-style: none;
 	line-height: 30px;
 }
+.sidebarLinks__image {
+	padding-right: 5px;
+}
 .center {
 	width: 64%;
+}
+.header {
+	display: flex;
 }
 .siteTitle {
 	padding-top: 10px;
@@ -52,40 +58,42 @@ body {
 .organizeContent {
 }
 .content {
-	display: flex;
 	display: inline-block;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: space-between;
+/*	justify-content: space-between;
+	align-content: space-between;*/
 }
 .right {
 	width: 18%;
 	min-height: 100vh;
 	background-color: #ECEDEF;
 }
-.userInfo {
+.rightHeader {
 	width: 100%;
 	height: 75px;
+	background-color: #74C0C8;
+}
+.userInfo__photo {
+	float: left;
+	padding-right: 5px;
+}
+.userInfo {
+}
+.userInfo__name {
+	color: #616D75;
+	font-weight: bold;
+}
+.userInfo__movie{
+	color: #B2B9C3;
+}
+.userInfo__status{
+	float: right;
+}
+.userInfo--currentUser{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #74C0C8;
-	color: white;
 }
-.friendInfo {
-	color: #616D75;
-}
-.friendInfo__photo {
-	float: left;
-	width: 25px;
-
-}
-.friendInfo__name {
-	font-weight: bold;
-}
-.friendInfo__movie{
-	color: #B2B9C3;
-}
-.friendInfo__status{
-	float: right;
+.userInfo__name--currentUser{
+		color: white;
 }
