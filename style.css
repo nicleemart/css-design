@@ -17,7 +17,7 @@ body {
 }
 .focusArea {
 	width: 100%;
-	height: 75px;
+	height: 10%;
 	background-color: #CC4D4D;
 	display: flex;
 	align-items: center;
@@ -55,13 +55,23 @@ body {
 	padding-top: 10px;
 	font-size: 24px;
 }
-.organizeContent {
+.sortContent {
 }
 .content {
 	display: inline-block;
 	flex-wrap: wrap;
 /*	justify-content: space-between;
 	align-content: space-between;*/
+}
+.content__title {
+	color: #5D6A72;
+	font-weight: bold;
+}
+.content__genre {
+	color: #9CA5B1;
+}
+.content__length {
+	color: #9CA5B1;
 }
 .right {
 	width: 18%;
@@ -70,7 +80,7 @@ body {
 }
 .rightHeader {
 	width: 100%;
-	height: 75px;
+	height: 10%;
 	background-color: #74C0C8;
 }
 .userInfo__photo {
@@ -95,5 +105,5 @@ body {
 	justify-content: center;
 }
 .userInfo__name--currentUser{
-		color: white;
+	color: white;
 }
