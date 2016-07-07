@@ -24,7 +24,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	border-bottom: solid white 3px;
-	width: 150px;
+	width: 140px;
 }
 .search__input {
 	background: transparent;
@@ -49,6 +49,7 @@ body {
 	color: #303F47;
 	font-weight: bold;
 	padding: 10px;
+	padding-left: 20px;
 }
 .sidebarHeader--lighter{
 	color: #6F7A81;
@@ -62,7 +63,7 @@ body {
 	padding-right: 5px;
 }
 .center {
-	width: 64%;
+	width: 62%;
 	margin-left: 15px;
 	margin-right: 15px;
 }
@@ -87,10 +88,15 @@ body {
 }
 .sortContent__divider {
 	color: #CFD5DF;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .sortContent__popular {
 	color: #8BC9D0;
 	font-weight: bold;
+}
+.topImages__one{
+	padding-right: 5px;
 }
 .content {
 	display: inline-block;
@@ -109,11 +115,10 @@ body {
 }
 .right {
 	position: fixed;
-	width: 18%;
+	width: 20%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	/*min-height: 100vh;*/
 	height: 100%;
 	background-color: #ECEDEF;
 }
@@ -127,7 +132,7 @@ body {
 }
 .userInfo {
 	padding: 5px;
-	padding-left: 15px;
+	padding-left: 25px;
 }
 .userInfo__photo {
 	float: left;
@@ -141,8 +146,6 @@ body {
 	color: #B2B9C3;
 }
 .userInfo__status{
-	float: right;
-	padding-right: 15px;
 }
 .userInfo--currentUser{
 	display: flex;
